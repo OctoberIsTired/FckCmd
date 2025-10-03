@@ -45,10 +45,24 @@
     {
       "id": "aaaf6ca9-5e9e-44e6-8e04-96ec02a2e0ed",
       "name": "Hayabusa",
-      "path": "C:/Users/$Env:UserName/Desktop/tools/hayabusa/hayabusa-3.5.0-win-aarch64.exe",
+      "path": "C:/Users/$Env:UserName/Desktop/tools/hayabusa/hayabusa-3.5.0-win-x64.exe",
       "icon_path": "",
       "run_as_admin": false,
-      "args": []
+      "quote_values": false,
+      "args": [
+        {
+          "name": "",
+          "value": "csv-timeline"
+        },
+        {
+          "name": "-d",
+          "value": "TEMPLATE_EVTX"
+        },
+        {
+          "name": "-o",
+          "value": "TEMPLATE_OUTPUT_HAYBUSA"
+        }
+      ]
     }
   ],
   "templates": {
