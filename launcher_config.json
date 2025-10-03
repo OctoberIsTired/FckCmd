@@ -1,0 +1,60 @@
+{
+  "apps": [
+    {
+      "id": "8704230b-dd75-4c1f-b92a-253ad982b424",
+      "name": "MFT Parse",
+      "path": "C:/Users/$Env:UserName/Desktop/tools/EricZimmermanTool/MFTECmd.exe",
+      "icon_path": "",
+      "run_as_admin": true,
+      "args": [
+        {
+          "name": "-f",
+          "value": "TEMPLATE_MFT_FILE"
+        },
+        {
+          "name": "--csv",
+          "value": "TEMPLATE_OUTPUT_DIR"
+        },
+        {
+          "name": "--csvf",
+          "value": "mftecmd.csv"
+        }
+      ]
+    },
+    {
+      "id": "57392348-cd49-44ac-b51f-385eb61178d7",
+      "name": "Evtx Parse",
+      "path": "C:/Users/$Env:UserName/Desktop/tools/EricZimmermanTool/EvtxeCmd/EvtxECmd.exe",
+      "icon_path": "",
+      "run_as_admin": true,
+      "args": [
+        {
+          "name": "-d",
+          "value": "TEMPLATE_EVTX"
+        },
+        {
+          "name": "--csv",
+          "value": "TEMPLATE_OUTPUT_DIR"
+        },
+        {
+          "name": "--csvf",
+          "value": "evtx.csv"
+        }
+      ]
+    },
+    {
+      "id": "aaaf6ca9-5e9e-44e6-8e04-96ec02a2e0ed",
+      "name": "Hayabusa",
+      "path": "C:/Users/$Env:UserName/Desktop/tools/hayabusa/hayabusa-3.5.0-win-aarch64.exe",
+      "icon_path": "",
+      "run_as_admin": false,
+      "args": []
+    }
+  ],
+  "templates": {
+    "TEMPLATE_MFT_FILE": "C:/Users/$Env:UserName/Desktop/path_to/C/$MFT",
+    "TEMPLATE_OUTPUT_DIR": "C:/Users/$Env:UserName/Desktop/path_to",
+    "TEMPLATE_SAVE_DIR": "",
+    "TEMPLATE_EVTX": "C:/Users/$Env:UserName/Desktop/path_to/C/Windows/System32/winevt/logs"
+  }
+}
